@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/main_view"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/main_bg"
+        android:gravity="center"
+        android:text="个人中心"
+        android:textColor="#000000"
+        android:textSize="10dp" />
+
+    <LinearLayout
+        android:id="@+id/mune_view1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/mune_view3"
+        android:layout_below="@+id/main_view"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/info_view"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/main"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/userImg_view"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:background="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/username_tx"
+                android:layout_toRightOf="@+id/userImg_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:text="用户名"
+                android:textColor="#000000" />
+
+            <ImageButton
+                    android:id="@+id/cancellation_btn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:scaleType="centerCrop"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="30dp"
+                    android:background="@color/main"
+                    android:src="@raw/cancellation" android:layout_alignParentRight="true"/>
+            
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/info_btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/msg_btn"
+            android:gravity="left|center"
+            android:text="个人信息" />
+
+        <Button
+            android:id="@+id/address_btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/msg_btn"
+            android:gravity="left|center"
+            android:text="默认地址" />
+
+        <Button
+            android:id="@+id/phone_btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/msg_btn"
+            android:gravity="left|center"
+            android:text="本地热线" />
+
+        <Button
+            android:id="@+id/group_btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/msg_btn"
+            android:gravity="left|center"
+            android:text="关于我们" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mune_view3"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/main_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:text="首页" />
+
+        <Button
+            android:id="@+id/order_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:text="订单" />
+
+        <Button
+            android:id="@+id/mune_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/border_above"
+            android:text="菜单"
+            android:textColor="@color/main" />
+    </LinearLayout>
+
+</RelativeLayout>

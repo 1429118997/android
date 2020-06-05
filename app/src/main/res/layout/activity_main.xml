@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/main_view"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/main_bg"
+        android:gravity="center"
+        android:text="首页"
+        android:textColor="#000000" />
+
+    <ListView
+        android:scrollbarThumbVertical="@drawable/scrollbar_show"
+        android:scrollbarSize="2dp"
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/mune_view"
+        android:layout_below="@+id/main_view"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="#FFFFFF"
+        android:fadingEdge="none" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/mune_view"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/main_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/main"
+            android:layout_weight="1"
+            android:background="@drawable/border_above"
+            android:text="首页" />
+
+        <Button
+            android:id="@+id/order_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:text="订单" />
+
+        <Button
+            android:id="@+id/mune_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:text="菜单" />
+    </LinearLayout>
+
+</RelativeLayout>
